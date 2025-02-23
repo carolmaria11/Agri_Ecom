@@ -17,7 +17,7 @@ const LoginSignUp = () => {
     console.log("Login Function Executed", formData);
 
     try {
-      const response = await fetch("http://localhost:4000/login", {
+      const response = await fetch("https://agri-store-backend.onrender.com/login", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -50,7 +50,7 @@ const LoginSignUp = () => {
     console.log("Signup Function Executed", formData);
 
     try {
-      const response = await fetch("http://localhost:4000/signup", {
+      const response = await fetch("https://agri-store-backend.onrender.com/signup", {
         method: "POST",
         headers: {
           Accept: "application/json",
