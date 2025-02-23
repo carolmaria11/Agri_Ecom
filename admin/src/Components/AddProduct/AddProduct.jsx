@@ -35,7 +35,7 @@ const AddProduct = () => {
       const formData = new FormData();
       formData.append("product", image);
 
-      const imageUploadResponse = await fetch("http://localhost:4000/upload", {
+      const imageUploadResponse = await fetch("https://agri-store-backend.onrender.com/upload", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -53,7 +53,7 @@ const AddProduct = () => {
 
         // Add Product
         const productAddResponse = await fetch(
-          "http://localhost:4000/addproduct",
+          "https://agri-store-backend.onrender.com/addproduct",
           {
             method: "POST",
             headers: {
